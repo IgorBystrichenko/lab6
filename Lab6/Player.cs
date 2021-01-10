@@ -17,8 +17,7 @@ namespace lab6
         protected Card _lastTakedCard;
         protected string _name;
         protected int _winnings;
-        protected char _type;
-        public Player(string name, char type)
+        public Player(string name)
         {
             _name = name;
             _cards = new List<Card>();
@@ -34,11 +33,6 @@ namespace lab6
         public ref readonly List<Card> GetDeck()
         {
             return ref _cards;
-        }
-
-        public char GetType()
-        {
-            return _type;
         }
 
         public ManualResetEvent GetClickEvent()

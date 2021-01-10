@@ -8,7 +8,7 @@ namespace lab6
 {
     class SmallestCardPlayer : Player
     {
-        public SmallestCardPlayer(string name) : base(name, 's') {  }
+        public SmallestCardPlayer(string name) : base(name) {  }
 
         public override Card TakeGameCard()
         {

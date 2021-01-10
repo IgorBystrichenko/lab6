@@ -8,7 +8,7 @@ namespace lab6
 {
     class BiggestCardPlayer : Player
     {
-        public BiggestCardPlayer(string name) : base(name, 'b') {  }
+        public BiggestCardPlayer(string name) : base(name) {  }
 
         public override Card TakeGameCard()
         {

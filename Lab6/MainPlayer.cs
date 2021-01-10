@@ -12,7 +12,7 @@ namespace lab6
     class MainPlayer : Player
     {
 
-        public MainPlayer(string name) : base(name, 'm') { ShowCards();}
+        public MainPlayer(string name) : base(name) { ShowCards();}
 
         public override Card TakeGameCard()
         {

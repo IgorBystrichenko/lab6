@@ -8,7 +8,7 @@ namespace lab6
 {
     class RandomCardPlayer : Player
     {
-        public RandomCardPlayer(string name) : base(name, 'r') {  }
+        public RandomCardPlayer(string name) : base(name) {  }
 
         public override Card TakeGameCard()
         {
