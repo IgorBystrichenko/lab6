@@ -6,6 +6,5 @@ C:\Users\Igor\source\repos\test\lab6\obj\Debug\lab6.GameWindow.resources
 C:\Users\Igor\source\repos\test\lab6\obj\Debug\lab6.MainWindow.resources
 C:\Users\Igor\source\repos\test\lab6\obj\Debug\lab6.Properties.Resources.resources
 C:\Users\Igor\source\repos\test\lab6\obj\Debug\lab6.csproj.GenerateResource.cache
-C:\Users\Igor\source\repos\test\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
 C:\Users\Igor\source\repos\test\lab6\obj\Debug\lab6.exe
 C:\Users\Igor\source\repos\test\lab6\obj\Debug\lab6.pdb

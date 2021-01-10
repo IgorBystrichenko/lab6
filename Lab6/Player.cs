@@ -31,9 +31,9 @@ namespace lab6
             return _name;
         }
 
-        public List<Card> GetDeck()
+        public ref readonly List<Card> GetDeck()
         {
-            return _cards;
+            return ref _cards;
         }
 
         public char GetType()
@@ -68,6 +68,7 @@ namespace lab6
             _lastTakedCard = _cards[index];
             BeginInvoke((MethodInvoker)(() =>
             {
+                
                 Controls.Remove(_cards[index]);
                 _cards.RemoveAt(index);
                 Location = new Point((Parent.Size.Width - _cards.Count * _lastTakedCard.Width) / 2, Location.Y);
