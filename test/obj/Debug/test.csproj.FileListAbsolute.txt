@@ -1,0 +1,10 @@
+C:\Users\Igor\source\repos\test\test\obj\Debug\test.csprojAssemblyReference.cache
+C:\Users\Igor\source\repos\test\test\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\Igor\source\repos\test\test\obj\Debug\lab6.Properties.Resources.resources
+C:\Users\Igor\source\repos\test\test\obj\Debug\lab6.GameWindow.resources
+C:\Users\Igor\source\repos\test\test\obj\Debug\lab6.MainWindow.resources
+C:\Users\Igor\source\repos\test\test\bin\Debug\lab6.exe.config
+C:\Users\Igor\source\repos\test\test\bin\Debug\lab6.exe
+C:\Users\Igor\source\repos\test\test\bin\Debug\lab6.pdb
+C:\Users\Igor\source\repos\test\test\obj\Debug\lab6.exe
+C:\Users\Igor\source\repos\test\test\obj\Debug\lab6.pdb
