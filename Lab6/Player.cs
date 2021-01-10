@@ -35,11 +35,6 @@ namespace lab6
             return ref _cards;
         }
 
-        public ManualResetEvent GetClickEvent()
-        {
-            return _clickEvent;
-        }
-
         public void AddCard(Card card)
         {
 
