@@ -14,7 +14,6 @@ namespace lab6
         protected ManualResetEvent _clickEvent = new ManualResetEvent(false);
         protected Card _pressedCard;
         protected List<Card> _cards;
-        protected Card _lastTakedCard;
         protected string _name;
         protected int _winnings;
         public Player(string name)
@@ -54,7 +53,7 @@ namespace lab6
         }
         public Card TakeCard(int index)
         {
-            _lastTakedCard = _cards[index];
+            Card _lastTakedCard = _cards[index];
             BeginInvoke((MethodInvoker)(() =>
             {
                 
@@ -85,11 +84,6 @@ namespace lab6
         public void DecWinnings()
         {
             _winnings--;
-        }
-
-        public Card GetLastTakedCard()
-        {
-            return _lastTakedCard;
         }
 
         public void ShowCards()

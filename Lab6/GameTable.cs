@@ -63,9 +63,9 @@ namespace lab6
             return _data.GetNumberOfPlayers();
         }
 
-        public ref readonly PlayersData GetPlayersData()
+        public PlayersData GetPlayersData()
         {
-            return ref _data;
+            return _data;
         }
 
         public ref readonly List<Card> GetDeck()
