@@ -6,21 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab6
 {
-    class IdentifierGenerator
-    {
-        private int _last;
-
-        public IdentifierGenerator()
-        {
-            _last = 1;
-        }
-
-        public int NextId()
-        {
-            return _last++;
-        }
-
-    }
+    
     class PlayerFactory
     {
         public static Player getPlayer(string name, char type)

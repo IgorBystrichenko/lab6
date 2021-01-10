@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab6
 {
+    
     public static class IntUtil
     {
         private static Random random;
@@ -20,5 +21,18 @@ namespace lab6
             Init();
             return random.Next(min, max);
         }
+    }
+    class IdentifierGenerator
+    {
+        private int _last;
+        public IdentifierGenerator()
+        {
+            _last = 1;
+        }
+        public int NextId()
+        {
+            return _last++;
+        }
+
     }
 }
