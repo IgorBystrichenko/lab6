@@ -44,7 +44,7 @@ namespace lab6
             List<Card> deck = DeckLoader.LoadDeck();
 
             GameTable gameTable = new GameTable(data, deck);
-
+     
             Card fakeCard = new Card(2, '1');
             _gamePanel = new TableLayoutPanel
             {
@@ -81,7 +81,7 @@ namespace lab6
             IdentifierGenerator gen = new IdentifierGenerator();
 
             players.Add(gen.NextId(), PlayerFactory.getPlayer("Player", 'm'));
-            players.Add(gen.NextId(), PlayerFactory.getPlayer("Bot", 'b'));
+            players.Add(gen.NextId(), PlayerFactory.getPlayer("Bot", 'r'));
 
             return new PlayersData(players);
         }

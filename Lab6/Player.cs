@@ -45,6 +45,24 @@ namespace lab6
         {
             return _clickEvent;
         }
+
+        public void AddCard(Card card)
+        {
+
+            card.Click += (sender, e) =>
+            {
+                _pressedCard = (Card)sender;
+                _clickEvent.Set();
+            };
+
+            _cards.Add(card);
+            Controls.Add(card);
+            Location = new Point(Location.X - (card.Width / 2), Location.Y);
+            if (Location.X < 0)
+            {
+                Location = new Point(0, Location.Y);
+            }
+        }
         public Card TakeCard(int index)
         {
             _lastTakedCard = _cards[index];
@@ -62,25 +80,7 @@ namespace lab6
             return _lastTakedCard;
         }
 
-        public void AddCard(Card card)
-        {
-
-            card.Click += (sender, e) =>
-            {
-                
-                _pressedCard = (Card)sender;
-                _clickEvent.Set();
-                Console.WriteLine("Клик");
-            };
-
-            _cards.Add(card);
-            Controls.Add(card);
-            Location = new Point(Location.X - (card.Width / 2), Location.Y);
-            if (Location.X < 0)
-            {
-                Location = new Point(0, Location.Y);
-            }
-        }
+        
 
         public int GetWinnings()
         {
